@@ -1,0 +1,21 @@
+body {
+    background-color: rgb(44, 44, 44);
+}
+
+section {
+    background-color: rgba(159, 159, 159, 0.438);
+}
+
+h1 {
+    color: azure;
+    font-family:Verdana;
+    text-align: left;
+    font-style: italic;
+    padding-left: 7cm;
+}
+
+p {
+    color: azure;
+    font-family: Arial;
+    text-align: center;
+}
