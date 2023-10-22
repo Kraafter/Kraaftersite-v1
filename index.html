@@ -1,18 +1,67 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>KRAAFTER</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header>
-            <h1>KRAAFTER</h1>
-        </header>
-        <section>
-            <p>A random site where I will be placing stuff, still under development.</p>
-        </section>
-        <footer>
+<html lang="en">
+<head>
+    <title>Kraafter</title>
+    <meta name="description" content="Kraaft's developmental website">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        </footer>
-    </body>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/ico" href="favicon.ico">
+
+    <meta property="og:type" content="website">
+    <meta content="Kraaft/PFC's official site" property="og:title" />
+    <meta content="Come have a look :v" property="og:description" />
+    <meta content="https://kraafter.tech" property="og:url" />
+    <meta content="https://kraafter.tech/ok.png" property="og:image" />
+    <meta content="#OOBFOO" data-react-helmet="true" name="theme-color" />
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="kraafter.tech">
+    <meta property="twitter:url" content="https://kraafter.tech">
+    <meta name="twitter:title" content="Kraaft/PFC's official site">
+    <meta name="twitter:description" content="Come have a look :v">
+    <meta name="twitter:image" content="https://media.discordapp.net/attachments/763300510433673218/1105908770661478430/ok.png">
+
+</head>
+<body>
+<header>
+    <h1>KRAAFTER</h1>
+    <p>A random site where I will be placing stuff, still under development.</p>
+</header>
+
+<div class="privacy-notice" id="privacy-notice">
+    <h2>Privacy Notice</h2>
+    <p>This website uses a Microsoft Clarity script for analytics. The data it collects are where you clicked, where you placed your mouse, etc. We are working a way to allow you to opt out of this tracking.</p>
+    <a href="#" onclick="closePrivacyNotice()">Got it!</a>
+    <br>
+    <a href="#" onclick="window.clarity('stop')">Opt out (experimental)</a>
+</div>
+
+<aside>
+    <iframe src="https://discord.com/widget?id=513535815150862346&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+</aside>
+
+<section>
+    <p>Long story short, I am an Indonesian teenager currently interested in programming and keyboard modification</p>
+    <p>You will find perhaps my upcoming projects as well as blogs soon, in the meantime you can check out my discord server on the right</p>
+</section>
+
+<script>
+    function closePrivacyNotice() {
+        document.getElementById("privacy-notice").classList.remove("show");
+    }
+
+    window.onload = function() {
+        document.getElementById("privacy-notice").classList.add("show");
+    };
+
+    function stopClarity() {
+
+    }
+</script>
+
+<footer>
+    <p>I do not know what I am doing</p>
+</footer>
+</body>
 </html>
