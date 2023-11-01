@@ -9,6 +9,7 @@ aside {
     float: right;
     font-family: Arial, serif;
     background-color: rgba(130, 130,130, 0.438);
+    align-content: center;
     &iframe {
         padding-top: 10px;
     }
@@ -24,13 +25,31 @@ h1 {
     font-family: Verdana, serif;
     text-align: left;
     font-style: italic;
-    padding-left: 7cm;
+    padding-left: 18%;
 }
 
 header {
     & p {
         text-align: center;
     }
+    .nav {
+        background: rgba(159, 159, 159, 0.438);
+    }
+    /* The sticky class is added to the header with JS when it reaches its scroll position */
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%
+    }
+
+    /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+    .sticky + .content {
+        padding-top: 102px;
+    }
+}
+
+a {
+    color: aliceblue;
 }
 
 p {
@@ -40,8 +59,11 @@ p {
     padding: 10px;
 }
 
+.centerimg{
+    text-align: center;
+}
+
 footer {
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
